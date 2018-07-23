@@ -61,7 +61,7 @@ function copyDist() {
 }
 
 function copyAssets() {
-    return gulp.src('src/assets/**/*')
+    return gulp.src('src/**/*')
         .pipe(gulp.dest('public'))
 }
 
@@ -85,9 +85,9 @@ gulp.task('build', gulp.series(
         minifyCSS,
         minifyHTML
     ),
-    gulp.parallel(
-        copyDist,
-        copyAssets
+    gulp.series(
+        copyAssets,
+        copyDist
     )
 ));
 

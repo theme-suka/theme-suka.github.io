@@ -9,3 +9,7 @@ node_modules
 .directory
 
 _build
+
+public
+
+dist
