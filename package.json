@@ -2,6 +2,9 @@
     "name": "theme-suka-site",
     "version": "0.0.0",
     "private": true,
+    "scripts": {
+        "build": "gulp build"
+    },
     "dependencies": {},
     "devDependencies": {
         "del": "^3.0.0",
