@@ -1,0 +1,6 @@
+/*!
+ * Theme Suka Website | style.css
+ * Author: SukkaW
+ * Link: https://github.com/theme-suka/theme-suka.github.io
+ * License: GPL-3.0
+ */body,html{overflow-x:hidden!important;-webkit-font-smoothing:antialiased}html .btn:focus,html a:focus{-webkit-box-shadow:none!important;box-shadow:none!important}.card{border:none}.timeline .timeline-item:last-child::before{background:0 0}html ::-webkit-scrollbar{width:6px;height:4px;background:0 0}@media (min-width:1024px){html ::-webkit-scrollbar{width:8px;height:6px}}html ::-webkit-scrollbar-thumb{background:rgba(0,0,0,.3)}.suka-devide-dot::after{content:" · "}header img.navbar-icon{height:1.8rem;width:auto}a,a:visited{color:#0070ff}a:active,a:focus,a:hover{color:#0070ff;opacity:.75}.timeline .timeline-item .timeline-icon.icon-lg,a.navbar-link,a.navbar-link:visited{color:#0070ff!important}.navbar-link:hover{color:#0070ff;opacity:.8}.suka-hero{background-color:#f5f5f5;position:relative;height:30rem;z-index:1}.suka-navbar{background-color:#f5f5f5}.hero-headline{padding-top:12rem}.suka-hero .btn,.suka-responsive .btn{background:0 0;border:.05rem solid #777;color:#777}.suka-responsive{padding-top:4rem;background:#fefefe}.suka-responsive .btn-link{border:transparent}
