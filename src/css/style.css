@@ -30,6 +30,11 @@ html .btn:focus {
     background: transparent;
 }
 
+.valign {
+    display: flex;
+    align-items: center;
+}
+
 /* Scrollbar */
 
 html *::-webkit-scrollbar {
@@ -42,6 +47,7 @@ html *::-webkit-scrollbar {
     html *::-webkit-scrollbar {
         width: 8px;
         height: 6px;
+        background: transparent;
     }
 }
 
@@ -51,6 +57,10 @@ html *::-webkit-scrollbar-thumb {
 
 .suka-devide-dot::after {
     content: " · "
+}
+
+header a.navbar-logo-link {
+    height: 1.8rem
 }
 
 header img.navbar-icon {
@@ -70,39 +80,44 @@ a:hover {
     opacity: .75
 }
 
+a.navbar-link {
+    font-size: .9rem;
+}
+
 a.navbar-link,
-a.navbar-link:visited,
-.timeline .timeline-item .timeline-icon.icon-lg {
-    color: #0070ff !important
+a.navbar-link:visited {
+    color: #fff !important
 }
 
 .navbar-link:hover {
-    color: #0070ff;
-    opacity: .8
+    color: #f5f5f5
 }
 
 /* Hero */
 
 .suka-hero {
-    background-color: #f5f5f5;
+    background: url(../assets/bg.jpg) center 30% no-repeat;
+    background-size: cover;
     position: relative;
-    height: 30rem;
+    height: 32rem;
+    color: #fff;
     z-index: 1;
-}
-
-.suka-navbar {
-    background-color: #f5f5f5;
 }
 
 .hero-headline {
     padding-top: 12rem;
 }
 
-.suka-hero .btn,
-.suka-responsive .btn {
+.suka-headline .btn {
     background: transparent;
-    border: .05rem solid #777;
-    color: #777;
+    border: .05rem solid #fff;
+    background: #f5f7f9;
+    color: #000;
+    font-weight: 600;
+}
+
+.suka-hero .btn {
+    width: 5rem;
 }
 
 /* Responsive */
@@ -112,6 +127,156 @@ a.navbar-link:visited,
     background: #fefefe
 }
 
+.suka-responsive .btn {
+    background: transparent;
+    border: .05rem solid #777;
+    color: #777;
+}
+
 .suka-responsive .btn-link {
     border: transparent;
+}
+
+.suka-responsive img {
+    max-width: 100%;
+    margin-top: 1rem;
+}
+
+/* SEO */
+
+.suka-seo {
+    background-color: #fff;
+    border-top: 1px solid #e9eaec;
+    border-bottom: 1px solid #e9eaec;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+
+.suka-seo img {
+    max-width: 22rem;
+    padding: 0 1.5rem;
+}
+
+/* Fast */
+
+.suka-fast {
+    background-color: #f3f5f7;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+
+.suka-fast .card {
+    background: 0 0;
+    border: 0;
+    color: #50596c;
+    padding: .5rem;
+}
+
+.suka-fast .card .card-score-title {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+.suka-fast .card .card-score {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.suka-fast .card .card-info-title {
+    font-size: .75rem;
+    margin-bottom: 0;
+}
+
+.suka-fast .card .card-info {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* I18N */
+
+.suka-i18n {
+    background-color: #434343;
+    color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    text-align: left;
+}
+
+.suka-i18n a,
+.suka-i18n a:hover,
+.suka-i18n a:visited,
+.suka-i18n a:focus {
+    color: #aaa !important;
+}
+
+/* Code Highlight */
+
+.suka-hightlight {
+    background: #fefefe;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+
+.suka-hightlight .carousel {
+    background: transparent;
+}
+
+.carousel-item img.img-responsive {
+    width: 100%
+}
+
+/* More */
+
+.suka-more {
+    padding: 4rem 0;
+    margin-left: auto;
+    margin-right: auto;
+    background: #f7f8f9;
+}
+
+.suka-more .grid-feat {
+    max-width: 52.2rem;
+}
+
+.suka-more .card {
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 5px 8px 0 rgba(0, 0, 0, .14), 0 1px 14px 0 rgba(0, 0, 0, .12);
+}
+
+@media (max-width: 480px) {
+    .suka-more .card {
+        min-height: 6rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+    .suka-more .card {
+        min-height: 11rem;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 864px) {
+    .suka-more .card {
+        min-height: 10.5rem;
+    }
+}
+
+@media (min-width: 865px) {
+    .suka-more .card {
+        min-height: 11.5rem;
+    }
+}
+
+/* Footer */
+
+footer {
+    color: #acb3c2;
+    padding: 1.5rem .5rem 1.5rem;
+    text-align: center;
+}
+
+footer a,
+footer a:focus,
+footer a:hover,
+footer a:visited {
+    color: #667189
 }

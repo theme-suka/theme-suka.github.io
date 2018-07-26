@@ -12,14 +12,14 @@ var configs = {
         browsers: [
             'last 2 versions',
             '> 1%',
-            'Chrome >= 30',
-            'Firefox >= 30',
-            'ie >= 9',
+            'Chrome >= 40',
+            'Firefox >= 40',
+            'ie >= 10',
             'Safari >= 8',
         ],
     },
     cleanCSS: {
-        compatibility: 'ie9'
+        compatibility: 'ie10'
     },
 };
 
