@@ -3,9 +3,9 @@ mkdir ./public-git
 cd ./public-git
 git init
 git config --global push.default matching
-git config --global user.email "isukkaw@gmail.com"
-git config --global user.name "SukkaW"
-git remote add origin https://${GitHubKEY}@github.com/theme-suka/theme-suka.github.io.git
+git config --global user.email "${GITHUB_EMAIL}"
+git config --global user.name "${GITHUB_USER}"
+git remote add origin https://${GITHUB_TOKEN}@github.com/theme-suka/theme-suka.github.io.git
 git pull origin master
 rm -rf ./*
 cp -rf ../public/* ./
